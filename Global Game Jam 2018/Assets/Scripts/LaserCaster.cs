@@ -25,6 +25,15 @@ public class LaserCaster : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+        // Bit shift the index of the layer (8) to get a bit mask
+        int layerMask = 1 << 8;
+        layerMask |= 1 << 2;
+        layerMask |= 1 << 9;
+        // This would cast rays only against colliders in layer 8.
+        // But instead we want to collide against everything except layer 8. The ~ operator does this, it inverts a bitmask.
+        layerMask = ~layerMask;
+
+
         //Rotation sync
         Quaternion tempRotation = Quaternion.identity;
         switch (laserOrientation)
@@ -55,7 +64,7 @@ public class LaserCaster : MonoBehaviour {
         emitterDir = transform.TransformDirection(Vector3.right);
         if (laserEnabled)
         {
-            RaycastHit2D hit = Physics2D.Raycast(emitterPos, emitterDir, 100);
+            RaycastHit2D hit = Physics2D.Raycast(emitterPos, emitterDir, 100, layerMask);
             if (hit.collider != null)
             {
                 hitPoint = new Vector3(hit.point.x, hit.point.y);

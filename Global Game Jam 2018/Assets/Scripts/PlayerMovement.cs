@@ -10,6 +10,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
+
     public float speed;
     public Vector3 movementOutput;
     public Vector3 velocityOutput;
@@ -36,6 +37,7 @@ public class PlayerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        
         float moveHorizontal = Input.GetAxis ("Horizontal");
         isGrounded = CheckGrounded();
 
@@ -75,13 +77,19 @@ public class PlayerMovement : MonoBehaviour {
     //Performs a Raycast from the corners of the player to see if the player is grounded
     private bool CheckGrounded()
     {
+        // Bit shift the index of the layer (8) to get a bit mask
+        int layerMask = 1 << 5;
+        // This would cast rays only against colliders in layer 8.
+        // But instead we want to collide against everything except layer 8. The ~ operator does this, it inverts a bitmask.
+        layerMask = ~layerMask;
+
         float sizeX = playerCollider.bounds.size.x;
         float sizeY = playerCollider.bounds.size.y;
 
         Vector3 corner1 = transform.position + new Vector3(sizeX / 2, ((-sizeY / 2) + .01f));
         Vector3 corner2 = transform.position + new Vector3(-sizeX / 2, (-sizeY / 2 + .01f));
 
-        RaycastHit2D hit = Physics2D.Raycast(corner1, new Vector3(0, -1, 0), 0.1f);
+        RaycastHit2D hit = Physics2D.Raycast(corner1, new Vector3(0, -1, 0), 0.1f, layerMask);
         if(hit.collider != null)
         {
             float rayLength = Vector2.Distance(transform.position, hit.point);
