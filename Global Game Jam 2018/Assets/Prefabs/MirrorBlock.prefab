@@ -116,6 +116,8 @@ MonoBehaviour:
   hitPoint: {x: 0, y: 0, z: 0}
   emitterPos: {x: 0, y: 0, z: 0}
   emitterOffset: {x: 0.5, y: 0, z: 0}
+  eo2: {x: 0, y: 0, z: 0}
+  emitterDir: {x: 0, y: 0, z: 0}
   baseEmitterOffset: {x: 0.5, y: 0, z: 0}
   laserEnabled: 1
   laserOrientation: 0
