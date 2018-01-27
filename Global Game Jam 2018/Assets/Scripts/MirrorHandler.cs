@@ -78,4 +78,12 @@ public class MirrorHandler : MonoBehaviour {
         //Debug.Log("beot " + transform.TransformPoint(reflectionLaser.baseEmitterOffset));
         //Debug.Log("hp " + hitPos);
     }
+	public void RotateClick() {
+		if (mirrorOrientation >= 0) {
+			mirrorOrientation++;
+			if (mirrorOrientation > 3) {
+				mirrorOrientation = 0;
+			}
+		}
+	}
 }
