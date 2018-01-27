@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4554519209606102}
   - component: {fileID: 212293899379389134}
   - component: {fileID: 61305664458016316}
+  - component: {fileID: 114471004094684688}
   m_Layer: 8
   m_Name: laserBeam
   m_TagString: Untagged
@@ -66,6 +67,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &114471004094684688
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1453007351587044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f1e55e93e67e3544baf3f4eb92102de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _glowColor: {r: 1, g: 0, b: 0, a: 1}
+  _glowBrightness: 4
+  _outlineWidth: 2
+  _alphaThreshold: 0.01
+  _drawOutside: 0
+  _enableInstancing: 0
 --- !u!212 &212293899379389134
 SpriteRenderer:
   m_ObjectHideFlags: 1
