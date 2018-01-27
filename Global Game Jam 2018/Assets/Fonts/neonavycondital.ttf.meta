@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: f3353f961eaaa0845a10c3490e1c731d
+timeCreated: 1517078196
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Neo-Navy Condensed Italic
+  fontNames:
+  - Neo-Navy Condensed Italic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

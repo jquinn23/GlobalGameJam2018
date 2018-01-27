@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: b69fbd2062eb64d4d9f7a42c32896d56
+timeCreated: 1517078150
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Neo-Navy Semi-Italic
+  fontNames:
+  - Neo-Navy Semi-Italic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
