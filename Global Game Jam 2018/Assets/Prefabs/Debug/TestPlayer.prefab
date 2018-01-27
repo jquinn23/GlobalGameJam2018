@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50913985739804296}
   - component: {fileID: 61767605205602840}
   - component: {fileID: 114279633331683592}
+  - component: {fileID: 114984685273873508}
   m_Layer: 2
   m_Name: TestPlayer
   m_TagString: Player
@@ -107,6 +108,23 @@ MonoBehaviour:
   c2Grounded: 0
   fallMultiplyer: 3
   lowJumpMultiplyer: 3
+--- !u!114 &114984685273873508
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1488816638880832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f1e55e93e67e3544baf3f4eb92102de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _glowColor: {r: 0, g: 1, b: 0.21568628, a: 1}
+  _glowBrightness: 2
+  _outlineWidth: 1
+  _alphaThreshold: 0.01
+  _drawOutside: 0
+  _enableInstancing: 0
 --- !u!212 &212609958890395198
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -142,7 +160,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: df8225dc0ab322f4eb08b8df75519dc1, type: 3}
-  m_Color: {r: 0.19247405, g: 0.6544118, b: 0.21477453, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.048275948, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
