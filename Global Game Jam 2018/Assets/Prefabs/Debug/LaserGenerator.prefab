@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212394990653864998}
   - component: {fileID: 61396917296354662}
   - component: {fileID: 114800665183394666}
-  m_Layer: 2
+  m_Layer: 9
   m_Name: LaserGenerator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,6 +81,13 @@ MonoBehaviour:
   laserBeam: {fileID: 1453007351587044, guid: 0421cb77a1c13ae42b0251b6bc5ba150, type: 2}
   laserLength: 0
   hitPoint: {x: 0, y: 0, z: 0}
+  emitterPos: {x: 0, y: 0, z: 0}
+  emitterOffset: {x: 0, y: 0, z: 0}
+  eo2: {x: 0, y: 0, z: 0}
+  emitterDir: {x: 0, y: 0, z: 0}
+  baseEmitterOffset: {x: 0.5, y: 0, z: 0}
+  laserEnabled: 1
+  laserOrientation: 0
 --- !u!212 &212394990653864998
 SpriteRenderer:
   m_ObjectHideFlags: 1
