@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 491732950}
   - component: {fileID: 491732949}
   - component: {fileID: 491732948}
+  - component: {fileID: 491732952}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -154,7 +155,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -194,6 +195,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &491732952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 491732947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6363bba448bf64e60a763433f9ddf81b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _threshold: 0.8
+  _softKnee: 0.5
+  _radius: 2.5
+  _intensity: 0.8
+  _highQuality: 1
+  _antiFlicker: 1
+  _shader: {fileID: 4800000, guid: 5a711a01011934ebcb58ef5ad52159d6, type: 3}
 --- !u!1 &716445444
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,6 +423,7 @@ GameObject:
   - component: {fileID: 1703825734}
   - component: {fileID: 1703825737}
   - component: {fileID: 1703825738}
+  - component: {fileID: 1703825739}
   m_Layer: 2
   m_Name: TestPlayer
   m_TagString: Untagged
@@ -445,7 +465,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -466,7 +486,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: df8225dc0ab322f4eb08b8df75519dc1, type: 3}
-  m_Color: {r: 0.19247405, g: 0.6544118, b: 0.21477453, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -532,6 +552,23 @@ MonoBehaviour:
   c2Grounded: 0
   fallMultiplyer: 3
   lowJumpMultiplyer: 3
+--- !u!114 &1703825739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1703825733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f1e55e93e67e3544baf3f4eb92102de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _glowColor: {r: 0.0042711976, g: 0.5808823, b: 0.22298577, a: 1}
+  _glowBrightness: 2
+  _outlineWidth: 1
+  _alphaThreshold: 0.01
+  _drawOutside: 0
+  _enableInstancing: 0
 --- !u!1 &1803245920
 GameObject:
   m_ObjectHideFlags: 0
