@@ -140,23 +140,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1991870209259082, guid: 07a075be8d6bd0244b13fe8e11a13b38,
     type: 2}
   m_PrefabInternal: {fileID: 1270633250}
---- !u!114 &1009592998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1009592997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f1e55e93e67e3544baf3f4eb92102de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _glowColor: {r: 0.2670019, g: 0.2158845, b: 0.8897059, a: 1}
-  _glowBrightness: 2
-  _outlineWidth: 1
-  _alphaThreshold: 0.01
-  _drawOutside: 0
-  _enableInstancing: 0
 --- !u!212 &1009592999
 SpriteRenderer:
   m_ObjectHideFlags: 0
