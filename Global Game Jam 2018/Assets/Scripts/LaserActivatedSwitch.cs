@@ -5,6 +5,7 @@ using UnityEngine;
 public class LaserActivatedSwitch : MonoBehaviour {
     public bool viewToggle;
     private bool Toggle;
+    public bool Inverted;
 
     private int laserTimeOutCounter;
     private int MAX_LASER_TIMEOUT = 2;
@@ -14,7 +15,14 @@ public class LaserActivatedSwitch : MonoBehaviour {
     {
         for (int j = 0; j < childLasers.Count; j++)
         {
-            childLasers[j].GetComponent<LaserCaster>().laserEnabled = false;
+            if (Inverted)
+            {
+                childLasers[j].GetComponent<LaserCaster>().laserEnabled = true;
+            }
+            else
+            {
+                childLasers[j].GetComponent<LaserCaster>().laserEnabled = false;
+            }
         }
     }
 
@@ -29,7 +37,14 @@ public class LaserActivatedSwitch : MonoBehaviour {
             Toggle = false;
             for (int j = 0; j < childLasers.Count; j++)
             {
-                childLasers[j].GetComponent<LaserCaster>().laserEnabled = false;
+                if (Inverted)
+                {
+                    childLasers[j].GetComponent<LaserCaster>().laserEnabled = true;
+                }
+                else
+                {
+                    childLasers[j].GetComponent<LaserCaster>().laserEnabled = false;
+                }
             }
         }
         laserTimeOutCounter--;
@@ -41,7 +56,14 @@ public class LaserActivatedSwitch : MonoBehaviour {
         laserTimeOutCounter = MAX_LASER_TIMEOUT;
         for (int j = 0; j < childLasers.Count; j++)
         {
-            childLasers[j].GetComponent<LaserCaster>().laserEnabled = true;
+            if (Inverted)
+            {
+                childLasers[j].GetComponent<LaserCaster>().laserEnabled = false;
+            }
+            else
+            {
+                childLasers[j].GetComponent<LaserCaster>().laserEnabled = true;
+            }
         }
     }
 
