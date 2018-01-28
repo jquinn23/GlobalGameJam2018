@@ -107,5 +107,14 @@ public class PlayerMovement : MonoBehaviour {
         return (grounded1 || grounded2);
     }
 
-    
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag.Equals("Respawn"))
+        {
+            GameObject.Find("GameManager").GetComponent<GameControl>().LoadLevel();
+            //Debug.Log("Hit DeadZone");
+        }
+       
+
+    }
 }

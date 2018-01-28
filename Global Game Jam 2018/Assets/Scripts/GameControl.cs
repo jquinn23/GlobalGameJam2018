@@ -25,6 +25,12 @@ public class GameControl : MonoBehaviour {
         }
 	}
 
+    public void LoadLevel()
+    {
+
+        SceneManager.LoadScene(currentLevel);
+    }
+
     public void LoadLevel(int levelIndex)
     {
         currentLevel = Scenes[levelIndex];
