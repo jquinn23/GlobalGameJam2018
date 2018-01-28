@@ -9,8 +9,10 @@ public class GameControl : MonoBehaviour {
     public string currentLevel = "MenuScene";
     public List<string> Scenes = new List<string>();
     public List<bool> LevelComplete = new List<bool>();
-	// Use this for initialization
-	void Awake()
+    
+
+    // Use this for initialization
+    void Awake()
     {
         if (control == null)
         {
@@ -42,4 +44,6 @@ public class GameControl : MonoBehaviour {
         currentLevel = "MenuScene";
         SceneManager.LoadScene("MenuScene");
     }
+
+    
 }
