@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114345153636055998}
   - component: {fileID: 61021784170035238}
   - component: {fileID: 82918654407583836}
+  - component: {fileID: 114476686193121056}
   m_Layer: 0
   m_Name: ExitDoor
   m_TagString: Player
@@ -160,6 +161,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+--- !u!114 &114476686193121056
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1718391622308980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f1e55e93e67e3544baf3f4eb92102de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _glowColor: {r: 0.6838235, g: 0.55177486, b: 0, a: 1}
+  _glowBrightness: 2
+  _outlineWidth: 1
+  _alphaThreshold: 0.01
+  _drawOutside: 0
+  _enableInstancing: 0
 --- !u!212 &212899478664350474
 SpriteRenderer:
   m_ObjectHideFlags: 1
