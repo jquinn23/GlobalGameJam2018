@@ -160,6 +160,26 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 2.1533206
       objectReference: {fileID: 0}
+    - target: {fileID: 212817335261637800, guid: 57806ef9f927ff04bae5e10bcdb6ad69,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 212817335261637800, guid: 57806ef9f927ff04bae5e10bcdb6ad69,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 212817335261637800, guid: 57806ef9f927ff04bae5e10bcdb6ad69,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0.6784314
+      objectReference: {fileID: 0}
+    - target: {fileID: 212817335261637800, guid: 57806ef9f927ff04bae5e10bcdb6ad69,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 57806ef9f927ff04bae5e10bcdb6ad69, type: 2}
   m_IsPrefabParent: 0
@@ -258,7 +278,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.012567685, g: 0.019749217, b: 0.031034483, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -269,7 +289,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -460,7 +480,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 91b9f2990069b7b4ea3d31e000a02330, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -892,7 +912,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4234422472617152, guid: 57806ef9f927ff04bae5e10bcdb6ad69, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.85
+      value: 2.92
       objectReference: {fileID: 0}
     - target: {fileID: 4234422472617152, guid: 57806ef9f927ff04bae5e10bcdb6ad69, type: 2}
       propertyPath: m_LocalPosition.z
@@ -987,6 +1007,28 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 57806ef9f927ff04bae5e10bcdb6ad69, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1536990786 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1040640037478760, guid: 57806ef9f927ff04bae5e10bcdb6ad69,
+    type: 2}
+  m_PrefabInternal: {fileID: 29555856}
+--- !u!114 &1536990787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1536990786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f1e55e93e67e3544baf3f4eb92102de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _glowColor: {r: 0.8, g: 0, b: 0.6784314, a: 1}
+  _glowBrightness: 2
+  _outlineWidth: 1
+  _alphaThreshold: 0.01
+  _drawOutside: 0
+  _enableInstancing: 0
 --- !u!1001 &1633808668
 Prefab:
   m_ObjectHideFlags: 0
@@ -1131,6 +1173,11 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 82308059693197246, guid: 2ec0430e6e332634fbbe51ed558b9b1e,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ec0430e6e332634fbbe51ed558b9b1e, type: 2}
