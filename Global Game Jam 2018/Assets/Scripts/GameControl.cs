@@ -47,8 +47,8 @@ public class GameControl : MonoBehaviour {
                 GetComponent<AudioSource>().Play();
             }
         }
-        currentLevel = "MenuScene";
-        SceneManager.LoadScene("MenuScene");
+        currentLevel = "MenuScene2";
+        SceneManager.LoadScene("MenuScene2");
     }
 
     
