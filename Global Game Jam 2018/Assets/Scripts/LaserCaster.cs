@@ -78,6 +78,10 @@ public class LaserCaster : MonoBehaviour {
                 {
                     hit.collider.gameObject.GetComponent<MirrorHandler>().ReflectLaser(hitPoint, gameObject);
                 }
+                if (hit.collider.gameObject.GetComponent<LaserActivatedSwitch>())
+                {
+                    hit.collider.gameObject.GetComponent<LaserActivatedSwitch>().ActivateSwitch();
+                }
             }
             else
             {
