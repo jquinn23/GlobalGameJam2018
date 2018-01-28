@@ -56,6 +56,7 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetButtonDown("Jump") && isGrounded == true)
         {
             playerRigidBody.velocity = Vector2.up * jumpHeight;
+            GetComponent<AudioSource>().Play();
         }
 
         /*
