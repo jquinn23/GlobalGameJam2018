@@ -16,6 +16,7 @@ public class ExitDoor : MonoBehaviour {
     {
         if (other.tag.Equals("Player"))
         {
+            GetComponent<AudioSource>().Play();
             gameManager.GetComponent<GameControl>().EndLevel();
         }
     }

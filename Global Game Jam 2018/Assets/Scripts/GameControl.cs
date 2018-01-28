@@ -36,6 +36,7 @@ public class GameControl : MonoBehaviour {
             if (currentLevel.Equals(Scenes[i]))
             {
                 LevelComplete[i] = true;
+                GetComponent<AudioSource>().Play();
             }
         }
         currentLevel = "MenuScene";
