@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212394990653864998}
   - component: {fileID: 61396917296354662}
   - component: {fileID: 114800665183394666}
+  - component: {fileID: 114933913004917568}
   m_Layer: 9
   m_Name: LaserGenerator
   m_TagString: Untagged
@@ -88,6 +89,23 @@ MonoBehaviour:
   baseEmitterOffset: {x: 0.5, y: 0, z: 0}
   laserEnabled: 1
   laserOrientation: 0
+--- !u!114 &114933913004917568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1768146739602258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f1e55e93e67e3544baf3f4eb92102de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _glowColor: {r: 0.0134380255, g: 0, b: 0.3897059, a: 1}
+  _glowBrightness: 2
+  _outlineWidth: 1
+  _alphaThreshold: 0.01
+  _drawOutside: 0
+  _enableInstancing: 0
 --- !u!212 &212394990653864998
 SpriteRenderer:
   m_ObjectHideFlags: 1
