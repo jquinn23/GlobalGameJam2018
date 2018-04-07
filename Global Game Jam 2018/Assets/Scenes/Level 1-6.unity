@@ -228,7 +228,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4091844971287916, guid: 3e80fe4c91b2b444dac4fdecc98ecbd8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5.1454935
+      value: -5.428
       objectReference: {fileID: 0}
     - target: {fileID: 4091844971287916, guid: 3e80fe4c91b2b444dac4fdecc98ecbd8, type: 2}
       propertyPath: m_LocalPosition.y
@@ -548,11 +548,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4426979716942716, guid: 67db1d644d07df246b23cc5752d50bd2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.92
+      value: 2.031
       objectReference: {fileID: 0}
     - target: {fileID: 4426979716942716, guid: 67db1d644d07df246b23cc5752d50bd2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.24
+      value: 3.17
       objectReference: {fileID: 0}
     - target: {fileID: 4426979716942716, guid: 67db1d644d07df246b23cc5752d50bd2, type: 2}
       propertyPath: m_LocalPosition.z
@@ -588,6 +588,14 @@ Prefab:
       propertyPath: childLasers.Array.data[0]
       value: 
       objectReference: {fileID: 1975758843}
+    - target: {fileID: 4426979716942716, guid: 67db1d644d07df246b23cc5752d50bd2, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.6149832
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426979716942716, guid: 67db1d644d07df246b23cc5752d50bd2, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.16220559
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 67db1d644d07df246b23cc5752d50bd2, type: 2}
   m_IsPrefabParent: 0
@@ -825,7 +833,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4091844971287916, guid: 3e80fe4c91b2b444dac4fdecc98ecbd8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.718257
+      value: -5.036
       objectReference: {fileID: 0}
     - target: {fileID: 4091844971287916, guid: 3e80fe4c91b2b444dac4fdecc98ecbd8, type: 2}
       propertyPath: m_LocalPosition.y
@@ -859,15 +867,15 @@ Prefab:
       propertyPath: m_Name
       value: LaserGenerator (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 114800665183394666, guid: 3e80fe4c91b2b444dac4fdecc98ecbd8,
-        type: 2}
-      propertyPath: laserOrientation
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 212394990653864998, guid: 3e80fe4c91b2b444dac4fdecc98ecbd8,
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114800665183394666, guid: 3e80fe4c91b2b444dac4fdecc98ecbd8,
+        type: 2}
+      propertyPath: laserOrientation
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e80fe4c91b2b444dac4fdecc98ecbd8, type: 2}
