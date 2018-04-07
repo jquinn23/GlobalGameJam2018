@@ -72,10 +72,19 @@ public class MirrorHandler : MonoBehaviour {
 
         reflectionLaser.laserOrientation = laserReflections[plc.laserOrientation, mirrorOrientation];
         reflectionLaser.laserEnabled = true;
-        reflectionLaser.emitterOffset = transform.InverseTransformPoint(hitPos) + reflectionLaser.baseEmitterOffset;
+        Vector3 testPoint = new Vector3(-transform.InverseTransformPoint(hitPos).x, transform.InverseTransformPoint(hitPos).y);
+        reflectionLaser.emitterOffset = testPoint + reflectionLaser.baseEmitterOffset;
         //reflectionLaser.emitterOffset = transform.TransformPoint(reflectionLaser.baseEmitterOffset) - hitPos;
         //Debug.Log("eo " + reflectionLaser.emitterOffset);
         //Debug.Log("beot " + transform.TransformPoint(reflectionLaser.baseEmitterOffset));
         //Debug.Log("hp " + hitPos);
     }
+	public void RotateClick() {
+		if (mirrorOrientation >= 0) {
+			mirrorOrientation++;
+			if (mirrorOrientation > 3) {
+				mirrorOrientation = 0;
+			}
+		}
+	}
 }

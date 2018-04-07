@@ -9,8 +9,10 @@ public class GameControl : MonoBehaviour {
     public string currentLevel = "MenuScene";
     public List<string> Scenes = new List<string>();
     public List<bool> LevelComplete = new List<bool>();
-	// Use this for initialization
-	void Awake()
+    
+
+    // Use this for initialization
+    void Awake()
     {
         if (control == null)
         {
@@ -22,6 +24,12 @@ public class GameControl : MonoBehaviour {
             Destroy(gameObject);
         }
 	}
+
+    public void LoadLevel()
+    {
+
+        SceneManager.LoadScene(currentLevel);
+    }
 
     public void LoadLevel(int levelIndex)
     {
@@ -36,9 +44,12 @@ public class GameControl : MonoBehaviour {
             if (currentLevel.Equals(Scenes[i]))
             {
                 LevelComplete[i] = true;
+                GetComponent<AudioSource>().Play();
             }
         }
-        currentLevel = "MenuScene";
-        SceneManager.LoadScene("MenuScene");
+        currentLevel = "MenuScene2";
+        SceneManager.LoadScene("MenuScene2");
     }
+
+    
 }

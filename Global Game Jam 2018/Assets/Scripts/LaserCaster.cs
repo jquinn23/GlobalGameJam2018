@@ -70,21 +70,27 @@ public class LaserCaster : MonoBehaviour {
                 hitPoint = new Vector3(hit.point.x, hit.point.y);
                 laserLength = Vector2.Distance(transform.position, hit.point);
                 laserBeam.transform.position = Vector3.Lerp(emitterPos, new Vector3(hit.point.x, hit.point.y), 0.5f);
-                Vector3 tempScale = laserBeam.transform.localScale;
-                tempScale.x = laserLength;
+                Vector3 tempScale = transform.localScale;
+                tempScale.x = laserLength / tempScale.x;
+                tempScale.y = 0.25f;
                 laserBeam.transform.localScale = tempScale;
                 Debug.DrawRay(emitterPos, emitterDir, Color.green, laserLength);
                 if (hit.collider.gameObject.GetComponent<MirrorHandler>())
                 {
                     hit.collider.gameObject.GetComponent<MirrorHandler>().ReflectLaser(hitPoint, gameObject);
                 }
+                if (hit.collider.gameObject.GetComponent<LaserActivatedSwitch>())
+                {
+                    hit.collider.gameObject.GetComponent<LaserActivatedSwitch>().ActivateSwitch();
+                }
             }
             else
             {
                 laserLength = 100;
                 laserBeam.transform.position = Vector3.Lerp(emitterPos, transform.TransformPoint(new Vector3(100, 0)), 0.5f);
-                Vector3 tempScale = laserBeam.transform.localScale;
+                Vector3 tempScale = transform.localScale;
                 tempScale.x = laserLength;
+                tempScale.y = 0.25f;
                 laserBeam.transform.localScale = tempScale;
             }
         }
