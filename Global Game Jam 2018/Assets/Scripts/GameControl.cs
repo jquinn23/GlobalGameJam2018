@@ -23,6 +23,7 @@ public class GameControl : MonoBehaviour {
         {
             Destroy(gameObject);
         }
+
 	}
 
     public void LoadLevel()
